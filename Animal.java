@@ -1,55 +1,42 @@
-package dennisMohle.myZoo.com;
+package myZoo;
 
 public class Animal {
 
-    // Animal Class attributes
+    // myZoo.Animal Class
     private String animalName;
+
     private String species;
+
     private int age;
 
-    // Create a static attribute that belongs to the Animal class.
-    public static int numOfAnimals = 0;
+    // Create a static attribute that belongs to the animal class
+    public static int numofAnimals = 0;
 
-    // Animal Class constructors.
+    // myZoo.Animal Class constructors
+
     public Animal(String name, String aSpecies, int anAge) {
-        System.out.println("\n A new Animal object was created.\n");
+        System.out.println("\n A new myZoo.Animal object was created.\n");
 
-        // Create initial values for the class attributes.
+        //create intial values for the class
         animalName = name;
         species = aSpecies;
         age = anAge;
-        numOfAnimals++;
+        numofAnimals++;
     }
-
     public Animal() {
-        System.out.println("\n A new Animal object was created.\n");
-        numOfAnimals++;
+        System.out.println("\n A new myZoo.Animal object was created.\n");
+        numofAnimals++;
     }
-
-    // Getters and Setters for each attribute (optional, but recommended for good practice)
     public String getName() {
         return animalName;
     }
-
     public void setName(String name) {
         this.animalName = name;
     }
-
     public int getAge() {
         return age;
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public String getSpecies() {
         return species;
     }
-
-    public void setSpecies(String species) {
-        this.species = species;
-    }
-
-
 }
